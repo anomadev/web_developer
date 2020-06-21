@@ -1,2 +1,3 @@
 # entorno de desarrollo y servidor nginx
 environment/
+cf_web/.idea/
