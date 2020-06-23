@@ -1,0 +1,40 @@
+/* Selector de etiquetas */
+h1, p {
+    color: green;
+    text-align: center;
+}
+
+span p {
+    color: red;
+    font-size: 20px;
+}
+
+/* Selectores de clase y id */
+.ejemplo {
+    background-color: ghostwhite;
+    height: 20px;
+}
+
+/* Selectores padres e hijos */
+#colores > ul > li{
+    background-color: yellow;
+    color: red;
+    font-size: 2em;
+}
+
+#orange {
+    color: orange;
+}
+
+#green {
+    color: green !important;
+}
+
+#red {
+    color: red;
+}
+
+/* Selectores de atributos */
+a[href="codigofacilito.com"] {
+    color: green;
+}

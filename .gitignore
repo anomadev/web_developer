@@ -1,3 +1,8 @@
 # entorno de desarrollo y servidor nginx
 environment/
+
+# directorios y archivos a descartar del curso de desarrollo web
 cf_web/.idea/
+
+# directorios y archivos a descartar del curso de css
+cf_css/.idea/
