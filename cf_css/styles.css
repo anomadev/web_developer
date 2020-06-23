@@ -1,40 +1,163 @@
+:root {
+    /* Colors */
+    --color-midnight: #2c3e50;
+    --color-green: #16a085;
+    --color-red: #c0392b;
+    --color-blue: #2980b9;
+    --color-purple: #8e44ad;
+    --color-yellow: #f39c12;
+    --color-gray: #ecf0f1;
+
+    /* Borders */
+    --border-radius: 8px;
+
+    /* Spaces */
+    --padding-defaut: 16px;
+    --padding-double: 32px;
+}
+
+html, body {
+    color: var(--color-midnight);
+    font-family: 'Didact Gothic', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.topic {
+    padding: 40px 40px;
+}
+
+.topic__title {
+    border-bottom: 2px solid var(--color-green);
+    font-weight: 400;
+    padding-bottom: 0.8em;
+}
+
+.topic__body {
+    background-color: var(--color-gray);
+    border-radius: var(--border-radius);
+    padding: 1.8em;
+}
+
+.topic__description {
+    color: var(--color-red);
+    display: block;
+    font-size: 12px;
+}
+
+
 /* Selector de etiquetas */
-h1, p {
-    color: green;
-    text-align: center;
+h3, p {
+    color: var(--color-green);
+    text-align: left;
 }
 
-span p {
-    color: red;
-    font-size: 20px;
-}
-
-/* Selectores de clase y id */
+/* Selectores de clase */
 .ejemplo {
-    background-color: ghostwhite;
-    height: 20px;
+    background-color: var(--color-blue);
+    border-radius: var(--border-radius);
+    color: white;
+    padding: 0.5em;
 }
 
 /* Selectores padres e hijos */
 #colores > ul > li{
-    background-color: yellow;
-    color: red;
-    font-size: 2em;
+    background-color: var(--color-yellow);
+    border-radius: var(--border-radius);
+    color: white;
+    font-weight: bold;
+    margin: 8px 0;
+    padding: 4px;
 }
 
-#orange {
-    color: orange;
-}
-
-#green {
-    color: green !important;
+#purple {
+    color: var(--color-purple) !important;
 }
 
 #red {
-    color: red;
+    color: var(--color-red);
 }
 
 /* Selectores de atributos */
 a[href="codigofacilito.com"] {
-    color: green;
+    color: var(--color-green);
+}
+
+
+/* Background color */
+.fondo__color {
+    background-color: var(--color-purple);
+    border-radius: var(--border-radius);
+    padding: var(--padding-double);
+}
+
+/* Background image */
+.fondo__imagen {
+    background-image: url("https://picsum.photos/200");
+    border-radius: var(--border-radius);
+    height: 200px;
+    width: 400px;
+}
+
+/* Background position */
+.fondo__centrado {
+    background-image: url("https://picsum.photos/seed/picsum/200/300");
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--border-radius);
+    height: 180px;
+    width: 280px;
+}
+
+/* Background gradient */
+.fondo__degradado {
+    background: linear-gradient(to right, var(--color-red), var(--color-yellow));
+    border-radius: var(--border-radius);
+    padding: var(--padding-double);
+}
+
+/* Background radial gradient */
+.fondo__radial {
+    background: radial-gradient(circle, var(--color-red), var(--color-yellow));
+    border-radius: var(--border-radius);
+    padding: var(--padding-double);
+    height: 200px;
+    width: 200px;
+}
+
+/* Colors */
+.item__color {
+    background-color: var(--color-gray);
+    border-radius: var(--border-radius);
+    color: var(--color-midnight);
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 1em;
+    padding: var(--padding-defaut);
+}
+
+.item__color--name {
+    background-color: lightgreen;
+}
+
+.item__color--hex {
+    background-color: var(--color-red);
+    color: white;
+}
+
+.item__color--rgb {
+    background-color: var(--color-purple);
+    color: white;
+}
+
+.item__color--rgba {
+    background-color: rgba(142, 68, 173, 0.3);
+}
+
+.item__color--hsl {
+    background-color: hsl(204, 64%, 44%); /* --color-blue */
+    color: white;
+}
+
+.item__color--hsla {
+    background-color: hsla(204, 64%, 44%, 0.3);
 }

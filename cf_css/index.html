@@ -7,30 +7,77 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>CF CSS a fondo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <h1>Hola desde Código Facilito</h1>
-    <p class="ejemplo">Saludos desde el parrafo</p>
+    <!-- Tema 1: Selectores  -->
+    <section class="topic">
+        <h2 class="topic__title">Selectores</h2>
+        <div class="topic__body">
+            <pre class="topic__description">/* selector de etiquetas */</pre>
+            <h3>Selector de Etiqueta en titulos</h3>
+            <p>Selector de etiqueta en parrafos</p>
 
-    <span>
-        <p>parrafo dentro del span</p>
-        <h2>h2 dentro del span</h2>
-    </span>
+            <pre class="topic__description">/* selector de clases */</pre>
+            <p class="ejemplo">Selector de clase en un parrafo</p>
 
-    <div id="colores">
-        <ul>
-            <li id="orange">Orange</li>
-            <li id="green">Green</li>
-            <li id="red">Red</li>
-            <li>Black</li>
-        </ul>
-        <p>parrafo</p>
-    </div>
+            <pre class="topic__description">/* selector de id */</pre>
+            <div id="colores">
+                <ul>
+                    <li>Orange</li>
+                    <li id="purple">Purple</li>
+                    <li id="red">Red</li>
+                    <li>Black</li>
+                </ul>
+            </div>
 
-    <a href="codigofacilito.com">Código Facilito</a>
-    <a href="google.com">Google</a>
+            <pre class="topic__description">/* selector de atributos */</pre>
+            <a href="codigofacilito.com">Código Facilito</a>
+            <a href="google.com">Google</a>
+        </div>
+    </section>
+
+    <!-- Tema 2: Background -->
+    <section class="topic">
+        <h2 class="topic__title">Background</h2>
+        <div class="topic__body">
+            <pre class="topic__description">/* background color */</pre>
+            <div class="fondo__color"></div>
+
+            <pre class="topic__description">/* background image & repeat*/</pre>
+            <div class="fondo__imagen"></div>
+
+            <pre class="topic__description">/* background position */</pre>
+            <div class="fondo__centrado"></div>
+
+            <pre class="topic__description">/* background gradient */</pre>
+            <div class="fondo__degradado"></div>
+
+            <pre class="topic__description">/* radial gradient */</pre>
+            <div class="fondo__radial"></div>
+        </div>
+    </section>
+
+    <!--  Tema 3: Colores -->
+    <section class="topic">
+        <h2 class="topic__title">Colores</h2>
+        <div class="topic__body">
+            <pre class="topic__description">/* color name & hexa */</pre>
+            <div class="item__color item__color--name">lightgreen </div>
+            <div class="item__color item__color--hex">#c0392b</div>
+
+            <pre class="topic__description">/* color rgb & rgba */</pre>
+            <div class="item__color item__color--rgb">rgb(142, 68, 173)</div>
+            <div class="item__color item__color--rgba">rgba(142, 68, 173, 0.3)</div>
+
+            <pre class="topic__description">/* color hsl & hsla */</pre>
+            <div class="item__color item__color--hsl">hsl(204, 64%, 44%)</div>
+            <div class="item__color item__color--hsla">hsla(204, 64%, 44%, 0.3)</div>
+        </div>
+    </section>
 </body>
 
 </html>
