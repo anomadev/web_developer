@@ -230,3 +230,34 @@ a[href="codigofacilito.com"] {
 .font-shadow {
     text-shadow: 1px 1px 1px var(--color-purple);
 }
+
+/* posiciones: relative */
+
+.position {
+    position: relative;
+    border: 2px solid var(--color-green);
+    padding: var(--padding-double);
+    border-radius: var(--border-radius);
+}
+
+.position--fixed {
+    background-color: var(--color-green);
+    border: none;
+    border-radius: var(--border-radius-double);
+    color: white;
+    padding: var(--padding-defaut);
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+}
+
+.position--absolute {
+    background-color: var(--color-green);
+    border: none;
+    border-radius: var(--border-radius);
+    color: white;
+    padding: var(--padding-defaut);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
