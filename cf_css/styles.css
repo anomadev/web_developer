@@ -10,6 +10,7 @@
 
     /* Borders */
     --border-radius: 8px;
+    --border-radius-double: 16px;
 
     /* Spaces */
     --padding-defaut: 16px;
@@ -160,4 +161,34 @@ a[href="codigofacilito.com"] {
 
 .item__color--hsla {
     background-color: hsla(204, 64%, 44%, 0.3);
+}
+
+/* borders */
+
+.caja {
+    background-color: var(--color-gray);
+    border-radius: var(--border-radius);
+    padding: var(--padding-double);
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.caja--borde {
+    border: 2px solid var(--color-red);
+}
+
+.caja--style {
+    border-top-style: dotted;
+    border-top-color: var(--color-blue);
+    border-left-style: dotted;
+    border-left-color: var(--color-blue);
+    border-bottom-style: dashed;
+    border-bottom-color: var(--color-purple);
+    border-right-style: dashed;
+    border-right-color: var(--color-purple);
+}
+
+.caja--radius {
+    border: 2px solid var(--color-green);
+    border-radius: var(--border-radius-double);
 }
