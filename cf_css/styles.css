@@ -348,3 +348,119 @@ a[href="codigofacilito.com"] {
         transform: rotate(360deg) scale(1.1, 1.1);
     }
 }
+
+/* cursor pointer */
+.pointer {
+    background-color: var(--color-midnight);
+    border-radius: var(--border-radius);
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-right: 1em;
+    padding: var(--padding-defaut);
+}
+
+.pointer--wait {
+    cursor: wait;
+}
+
+.pointer--nodrop {
+    cursor: no-drop;
+}
+
+.pointer--help {
+    cursor: help;
+}
+
+.pointer--move {
+    cursor: move;
+}
+
+.pointer--crosshair {
+    cursor: crosshair;
+}
+
+.pointer--resize {
+    cursor: row-resize;
+}
+
+/* media queries */
+
+.responsiveEl {
+    background: linear-gradient(to right, #7f8c8d, var(--color-midnight));
+    border-radius: var(--border-radius);
+    color: white;
+    display: inline-block;
+    padding: var(--padding-double);
+}
+
+@media screen and (max-width: 760px) {
+    .responsiveEl {
+        background: linear-gradient(to right, var(--color-blue), var(--color-purple));
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .responsiveEl {
+        background: linear-gradient(to right, var(--color-yellow), var(--color-red));
+    }
+}
+
+/* pseudos clases */
+.pseudoClass:link {
+    color: var(--color-yellow);
+}
+
+.pseudoClass:visited {
+    color: var(--color-red)
+}
+
+.pseudoClassList:first-child {
+    color: var(--color-blue);
+}
+
+.pseudoClassList:nth-child(2) {
+    color: var(--color-purple);
+}
+
+.pseudoClassList:last-child {
+    color: var(--color-green);
+}
+
+span.pseudoClassList:only-of-type {
+    color: var(--color-midnight);
+    font-size: 0.8em;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/* pseudo elementos */
+
+.pseudoElements {
+    color: var(--color-midnight);
+    max-width: 480px;
+}
+
+.pseudoElements::first-line {
+    color: var(--color-blue);
+}
+
+.pseudoElements::first-letter {
+    color: var(--color-purple);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.pseudoElements::after {
+    content: 'curso profesional de css';
+    color: var(--color-red);
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.pseudoElements::selection {
+    background-color: rgba(142, 68, 173, 0.3);
+    color: var(--color-purple);
+}
