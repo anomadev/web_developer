@@ -304,6 +304,47 @@ a[href="codigofacilito.com"] {
     opacity: 0.8;
 }
 
-.image--text {
-    
+/* animaciones */
+
+.animate {
+    background: linear-gradient(to right, var(--color-blue), var(--color-purple));
+    border-radius: var(--border-radius);
+    height: 5em;
+    transition: all 0.3s ease-out;
+    width: 5em;
+}
+
+.animate--transform:hover {
+    cursor: pointer;
+    transform: translate(30px, 0) rotate(45deg);
+}
+
+.animate--transition {
+    transition: all 0.8s ease;
+}
+
+.animate--transition:hover {
+    background: linear-gradient(to right, var(--color-yellow), var(--color-red));
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+
+.animate--custom {
+    border-radius: 50%;
+    transition: ease;
+    animation-name: ejemplo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes ejemplo {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg) scale(1.1, 1.1);
+    }
 }
