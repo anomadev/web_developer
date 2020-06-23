@@ -192,3 +192,41 @@ a[href="codigofacilito.com"] {
     border: 2px solid var(--color-green);
     border-radius: var(--border-radius-double);
 }
+
+/* fuentes */
+
+.font {
+    color: var(--color-midnight);
+    font-weight: bold;
+}
+
+.font--italic {
+    font-style: italic;
+}
+
+.font--arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* trabajo con los espacios en blanco y saltos de linea */
+.font--whitespace {
+    white-space: pre-line;
+}
+
+/* espeficia el tamaño o distancia que se encuentra entre palabras */
+.font--spacing {
+    word-spacing: 16px;
+}
+
+.font--formated {
+    font-size: 0.8em;
+    font-weight: normal;
+    text-decoration: underline;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+/* posicion horizontal, posicion vetical, desenfoque y color */
+.font-shadow {
+    text-shadow: 1px 1px 1px var(--color-purple);
+}
