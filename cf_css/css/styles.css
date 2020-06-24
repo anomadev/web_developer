@@ -497,3 +497,66 @@ span.pseudoClassList:only-of-type {
     font-size: 2em;
     font-weight: bold;
 }
+
+.flexbox {
+    display: flex;
+}
+
+.flexbox > button {
+    border: 0;
+    font-size: 1em;
+    outline: none;
+    padding: 10px;
+    color: white;
+    width: 200px;;
+}
+
+.flexbox > button:nth-of-type(1) {
+    background-color: #bdc3c7;
+}
+
+.flexbox > button:nth-of-type(2) {
+    background-color: #95a5a6;
+}
+
+.flexbox > button:nth-of-type(3) {
+    background-color: #7f8c8d;
+}
+
+/* flex-direction: forma en que se despliegan los elementos */
+.flexbox--direction {
+    flex-direction: row-reverse;
+}
+
+.flexbox--wrap {
+    /* flex-wrap: nowrap; no rompe la linea */
+    /* flex-wrap: wrap; rompe la linea cuando el espacio disponible se vea superado */
+    /* shorthand para flex-direction y flex-wrap */
+    flex-flow: row wrap;
+}
+
+/*
+ * shorthand de flex-grow: incremento del tamaño relativo a los otros elementos,
+ * flex-shrink: la cantidad que un elemento puede encogerse con respecto a otros elementos,
+ * flex-basis: permite indicar la longitud deseada de los elementos.
+ */
+.flexbox--shflex {
+    /* grow, shrink, tamaño respecto al eje principal */
+    flex-direction: column;
+    flex: 1 2 300px
+}
+
+/* alineación de los elementos con respecto al eje principal */
+/* align-items alinea los elementos en el eje cruzado */
+.flexbox--justify {
+    justify-content: space-around;
+}
+
+.flexbox--align {
+    flex-direction: column;
+    align-items: center;
+}
+
+.flexbox--self {
+    align-self: flex-end;
+}
