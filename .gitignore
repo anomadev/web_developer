@@ -9,3 +9,6 @@ cf_css/.idea/
 
 # directorios y archivos a descartar del curso javascript dom
 cf_dom/.idea/
+
+# directorios y archivos a descartar del curso de desarrollo web frontend
+cf_frontend/node_modules/ 
