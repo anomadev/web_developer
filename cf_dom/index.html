@@ -29,6 +29,11 @@
       <div class="jumbotron">
         <h2 class="display-2" id="title">Título</h2>
         <p class="description_container" id="description">Breve descripción.</p>
+        <p>
+          <button class="btn btn-default clickEvent">Evento Click</button>
+          <button class="btn btn-default dblClickEvent">Evento Doble Click</button>
+          <button class="btn btn-default objTarget">Ocultar Titulo</button>
+        </p>
 
         <form id="course-form">
           <div class="form-group">
@@ -38,6 +43,13 @@
           <div class="form-group">
             <input type="text" class="form-control" id="description-form" placeholder="Descripción"/>
             <small id="descriptionHelp" class="form-text text-muted">Escribe una breve descripción.</small>
+          </div>
+
+          <div class="form-group">
+            <label>
+              <input type="checkbox" id="checkbox-form">
+              Premium
+            </label>
           </div>
 
           <button type="submit" id="create-course" class="btn btn-info">Crear curso</button>

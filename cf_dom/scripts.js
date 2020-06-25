@@ -58,11 +58,11 @@ for (var tag = 0; tag < tagsItems.length; tag++) {
  * querySelector('li') para etiquetas
  */
 
-const element = document.querySelector('div.row > ul.list-group > li');
+const element = document.querySelector('div.container > ul.list-group > li');
 console.log(element);
 
 // querySelectorAll retorna una colección de elementos
-const elements = document.querySelectorAll('div.row > ul.list-group > li');
+const elements = document.querySelectorAll('div.container > ul.list-group > li');
 console.log(elements);
 
 /**
@@ -94,5 +94,132 @@ console.log(element.nextElementSibling);
  * (etiquetas, texto o saltos de linea).
  */
 
-const firstCourse = document.getElementById('#first-course');
+const firstCourse = document.getElementById('first-course');
 console.log(firstCourse.childNodes);
+
+/** Atributos
+ * ============================================================================
+ */
+
+/**
+  * innerHTML almacena el html del elemento, incluyendo los saltos linea
+  * este método medifica el DOM eliminando y creando elementos.
+  */
+
+console.log(description.innerHTML);
+description.innerHTML = 'Listado de <strong>cursos profesionales</strong>';
+console.log(description.textContent);
+
+/** Eventos
+ * ============================================================================
+ * eventos click y doble click
+ */
+
+const btnClickEvent = document.querySelector('.clickEvent');
+btnClickEvent.addEventListener('click', function() {
+  console.log('Evento Click');
+});
+
+const btnDblClickEvent = document.querySelector('.dblClickEvent');
+btnDblClickEvent.addEventListener('dblclick', function() {
+  console.log('Evento Doble Click');
+});
+
+/**
+ * objeto target es un atributo del objeto event, el cual almacena 
+ * el elemento que disparo al evento.
+ */
+
+const btnTarget = document.querySelector('.objTarget');
+btnTarget.addEventListener('click', function(event) {
+  // el parametro event hace referencia al evento, para estae caso "click"
+  console.log(event.target);
+
+  if(title.style.display != 'none') {
+    title.style.display = 'none';
+    event.target.textContent = 'Mostrar Titulo';
+  } else {
+    title.style.display = 'block';
+    event.target.textContent = 'Ocultar Titulo';
+  }
+});
+
+/**
+ * eventos del mouse
+ */
+
+btnTarget.addEventListener('mouseenter', function() {
+  this.className = 'btn btn-primary';
+});
+
+btnTarget.addEventListener('mouseout', function() {
+  this.className = 'btn btn-default';
+});
+
+/**
+ * función del objeto window setTimeout, la cual ejecuta una función
+ * despues de un tiempo estipulado.
+ */
+
+setTimeout(function(a, b, c) {
+  console.log(`la suma es de: ${a + b + c}`);
+}, 2000, 1, 2, 3);
+
+/**
+ * eventos del teclado
+ */
+
+const titleForm = document.querySelector('#title-form');
+titleForm.addEventListener('keydown', function(event) {
+  console.log('tecla presionada: '+event.key+' con el código: '+event.keyCode);
+});
+
+/**
+ * evento submit 
+ */
+
+const form = document.getElementById('course-form');
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  let title = document.getElementById('title-form').value;
+  let description = document.getElementById('description-form').value;
+
+  console.log(title);
+  console.log(description);
+});
+
+/**
+ * eventos de cambio de valor
+ */
+
+const cbChangeEvent = document.getElementById('checkbox-form');
+cbChangeEvent.addEventListener('change', function() {
+  console.log('cambio de valor');
+});
+
+/**
+ * el evento DOMContentLoaded se ejecuta cuando el html es parseado y el dom
+ * ya fue construido.
+ * 
+ * document.addEventListener('DOMContentLoaded', function(){});
+ */
+
+/**
+ * Propagación de eventos:
+ * event.target: mantiene el valor del elemento que lanzo el evento.
+ * this: cambia su valor conforme se va propagando el evento.
+ * 
+ * Para evitar la propagación del evento podemos apoyarnos de:
+ * event.stopPropagation() en el punto que deseamos.
+ */
+
+for(let element of document.querySelectorAll('*')) {
+  element.addEventListener('click', showMessage);
+}
+
+function showMessage(event) {
+  console.log("Elemento actual: " + this.tagName);
+  console.log("Elemento que disparo el evento: " + event.target.tagName);
+  console.log("\n");
+}
