@@ -6,3 +6,6 @@ cf_web/.idea/
 
 # directorios y archivos a descartar del curso de css
 cf_css/.idea/
+
+# directorios y archivos a descartar del curso javascript dom
+cf_dom/.idea/
