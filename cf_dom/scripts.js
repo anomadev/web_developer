@@ -187,6 +187,8 @@ form.addEventListener('submit', function(event) {
 
   console.log(title);
   console.log(description);
+
+  addToList(title);
 });
 
 /**
@@ -223,3 +225,33 @@ function showMessage(event) {
   console.log("Elemento que disparo el evento: " + event.target.tagName);
   console.log("\n");
 }
+
+/** Modificar el DOM
+ * ============================================================================
+ * agregar elementos al DOM
+ */
+
+courses = document.getElementById('list-courses');
+
+function addToListWithInnerHTML(title) {
+  let listItemTemplate = `<li class="list-group-item">${title}</li>`;
+  courses.innerHTML += listItemTemplate; 
+}
+
+function addToList(title) {
+  let listItem = document.createElement('li');
+  listItem.className = 'list-group-item';
+  listItem.textContent = title;
+  listItem.addEventListener('dblclick', deleteCurrentItem);
+
+  courses.appendChild(listItem);
+}
+
+/**
+ * eliminar elementos del DOM
+ */
+
+function deleteCurrentItem(event) {
+  let item = event.target;
+  courses.remove(item);
+} 
