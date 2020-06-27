@@ -6,7 +6,43 @@
   <title>A Basic Webpage</title>
 </head>
 <body>
-  <section>
+  <div class="menu">
+    <img src="../public/images/menu.svg" alt="menu icon">
+  </div>
+
+  <div class="menu-screen">
+    <a href="" class="close">
+      <img src="../public/images/close.svg" alt="menu close">
+    </a>
+    <nav>
+      <a href="#home">
+        <span class="main">Home</span>
+        <span>Know about us</span>
+      </a>
+
+      <a href="#about">
+        <span class="main">Services</span>
+        <span>Know about us</span>
+      </a>
+
+      <a href="#mission">
+        <span class="main">Mission</span>
+        <span>Know about us</span>
+      </a>
+
+      <a href="#map">
+        <span class="main">Location</span>
+        <span>Know about us</span>
+      </a>
+
+      <a href="#social">
+        <span class="main">Contact us</span>
+        <span>Know about us</span>
+      </a>
+    </nav>
+  </div>
+
+  <section id="home">
     <div class="grid">
       <div class="container">
         <div class="grid-main-area">
@@ -40,7 +76,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="about">
     <div class="grid-main-area slider">
       <div class="text">
         <div class="controls">
@@ -63,7 +99,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="mission">
     <div class="grid full-height mission">
       <div class="container">
         <h1>Our mission</h1>
@@ -82,11 +118,11 @@
     </div>
   </section>
 
-  <section>
+  <section id="map">
     <div id="mapa"></div>
   </section>
 
-  <section>
+  <section id="social">
     <div class="grid social">
       <div class="container">
         <p class="title">Contact us</p>
