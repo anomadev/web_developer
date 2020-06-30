@@ -1,0 +1,34 @@
+* {
+  margin: 0px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.poster {
+  height: 80vh;
+  background: #DAD299;
+  background: -webkit-linear-gradient(to right, #B0DAB9, #DAD299);
+  background: linear-gradient(to right, #B0DAB9, #DAD299);
+}
+
+.navigation {
+  background-color: white;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.6);
+  border-top: 1px solid rgba(204, 204, 204, 0.6);
+  width: 100%;
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.navigation li {
+  display: inline-block;
+  border-right: 1px solid rgba(204, 204, 204, 0.6);
+  padding: 1em 1.2em;
+}
+
+.navigation.pinged {
+  position: fixed;
+  top: 0px;
+}
