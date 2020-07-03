@@ -1,0 +1,49 @@
+.easeCalendar {
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0px 1px 2px rgba(0,0,0,0.24);
+}
+
+.easeCalendar header {
+  background-color: #555574;
+  padding: 10px 15px;
+  text-align: center;
+  color: white;
+}
+
+.easeCalendar table {
+  border-spacing: 0;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.easeCalendar thead {
+  background-color: #3A3A59;
+  color: white;
+}
+
+.easeCalendar td {
+  padding: 4px;
+}
+
+.easeCalendar tr td {
+  border: solid 1px #F5F5F5;
+}
+
+.easeCalendar button {
+  display: inline-block;
+  width: 50%;
+  padding: 8px;
+  border: none;
+  outline: none;
+  background-color: #EF3F61;
+  color: white;
+  cursor: pointer;
+}
+
+.easeCalendar button:hover {
+  background-color: #DB3B61;;
+}
