@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ripple Button</title>
+  <style>
+    .md-button {
+      background-color: #2196F3;
+      color: white;
+      border: none;
+      outline: none;
+      padding: 0.6em 1.2em;
+      font-size: 1em;
+      border-radius: 4px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button class="md-button">Save</button>
+  <script src="ripple.js"></script>
+  <script>
+    Ripple.init('button');
+  </script>
+</body>
+</html>
