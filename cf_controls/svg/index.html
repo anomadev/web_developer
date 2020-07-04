@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colorear SVG con degradados</title>
+  <style>
+    .snowflake {
+      -webkit-mask: url(nieve.svg) no-repeat 100% 100% / 10px 10px;
+      mask: url(nieve.svg) no-repeat 100% 100% / 10px 10px;
+      background: linear-gradient(to right, #5B86E5, #36D1DC);
+      height: 700px;
+      width: 700px;
+    }
+  </style>
+</head>
+<body>
+  <div class="snowflake"></div>
+</body>
+</html>
