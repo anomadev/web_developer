@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plantilla</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <style>
+    .row > div {
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .uno { background: #f2f2f2; }
+    .dos { background: #dbdbdb; padding: 0 20px; }
+    .tres { background: #f2f2f2; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col uno">
+        <h3>Columna numero #1</h3>
+      </div>
+      <!-- La columna tendra un tamaño automatico a partir del tamaño largo -->
+      <div class="col dos col-lg-auto">
+        <h3>Columna numero #2</h3>
+      </div>
+      <div class="col tres">
+        <h3>Columna numero #3</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <h3>Columna #1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam odit earum libero magnam recusandae totam quisquam id atque doloribus, eius, vel molestias amet nihil enim? Ea a unde sint? Perspiciatis.</p>
+      </div>
+      <div class="col">
+        <h3>Columna #2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam odit earum libero magnam recusandae totam quisquam id atque doloribus, eius, vel molestias amet nihil enim? Ea a unde sint? Perspiciatis.</p>
+      </div>
+      <div class="w-100"></div>
+      <div class="col">
+        <h3>Columna #3</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam odit earum libero magnam recusandae totam quisquam id atque doloribus, eius, vel molestias amet nihil enim? Ea a unde sint? Perspiciatis.</p>
+      </div>
+      <div class="col">
+        <h3>Columna #4</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam odit earum libero magnam recusandae totam quisquam id atque doloribus, eius, vel molestias amet nihil enim? Ea a unde sint? Perspiciatis.</p>
+      </div>
+    </div>
+  </div>
+  <script src="../js/jquery.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

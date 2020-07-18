@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid System</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <style>
+    .row > div {
+      background-color: #f2f2f2;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <!--
+    Tamaños de columna en Bootstrap 4:
+    .col        Extra pequeño (extra small) - smartphones vertical      Menos de 544px
+    .col-sm     Pequeño (small) - smartphones vertical                  Mas de 544px y menos de 768px
+    .col-md     Mediano (medium) - tablets                              Mas de 768px y menos de 992px
+    .col-lg     Largo (large) - computadoras                            Mas de 992px y menos de 1200px
+    .col-xl     Extra Largo (extra large) - computadoras                Mas de 1200px
+  -->
+  <!--  container es una sección que centra el contenido -->
+  <div class="container">
+    <!-- el container debe estar divido por filas segun las reglas de bootstrap -->
+    <div class="row">
+      <!-- las filas igualmente deben estar dividasp por secciones correspondientes a las columnas -->
+      <div class="col-12 col-sm-6 col-md">
+        <h1>Hola mundo</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione illum tempore odit necessitatibus minus, nam eaque animi? Beatae earum recusandae fuga non ratione soluta repellendus rerum, maxime asperiores alias harum.</p>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md">
+        <h1>Hola mundo</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione illum tempore odit necessitatibus minus, nam eaque animi? Beatae earum recusandae fuga non ratione soluta repellendus rerum, maxime asperiores alias harum.</p>
+      </div>
+
+      <div class="col-12 col-sm col-md">
+        <h1>Hola mundo</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione illum tempore odit necessitatibus minus, nam eaque animi? Beatae earum recusandae fuga non ratione soluta repellendus rerum, maxime asperiores alias harum.</p>
+      </div>
+    </div>
+  </div>
+  <script src="../js/jquery.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

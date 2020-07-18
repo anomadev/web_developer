@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plantilla</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <style>
+    .row {
+      background: #e8e8e8;
+      height: 150px;
+      margin-top: 20px;
+    }
+
+    .col {
+      background: #f2f2f2;
+      text-align: center;
+      padding: 10px;
+      border: 1px solid #4d5061;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 
+      la propiedad aling-items-start le asigna solo el alto que necesitan a las columnas
+      y las alinea verticalmente al inicio de la fila. 
+    -->
+    <div class="row align-items-start">
+      <!-- las columnas tendran automaticamente el alto de su elemento padre -->
+      <div class="col">Columna #1</div>
+      <div class="col">Columna #2</div>
+      <div class="col">Columna #3</div>
+    </div>
+
+    <!-- alineación vertical centrada -->
+    <div class="row align-items-center">
+      <!-- las columnas tendran automaticamente el alto de su elemento padre -->
+      <div class="col">Columna #1</div>
+      <div class="col">Columna #2</div>
+      <div class="col">Columna #3</div>
+    </div>
+
+    <!-- alienación vertical al fondo de la fila -->
+    <div class="row align-items-end">
+      <!-- las columnas tendran automaticamente el alto de su elemento padre -->
+      <div class="col">Columna #1</div>
+      <div class="col">Columna #2</div>
+      <div class="col">Columna #3</div>
+    </div>
+
+    <div class="row">
+      <!-- las columnas tendran automaticamente el alto de su elemento padre -->
+      <div class="col align-self-start">Columna #1</div>
+      <div class="col align-self-center">Columna #2</div>
+      <div class="col align-self-end">Columna #3</div>
+    </div>
+  </div>
+  <script src="../js/jquery.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+</body>
+</html> 
