@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Utilities</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <style>
+    .columna {
+      background: #2191fb;
+      color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="columna col hidden-sm-up">XS - Extra Small</div>
+      <div class="columna col hidden-xs-down hidden-md-up">SM - Small</div>
+      <div class="columna col hidden-sm-down hidden-lg-up">MD - Medium</div>
+      <div class="columna col hidden-md-down hidden-xl-up">LG - Large</div>
+      <div class="columna col hidden-lg-down">XL - Extra Large</div> 
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi recusandae, saepe non fuga totam nam molestiae quas vero eius qui in sequi tempora minus magnam reiciendis reprehenderit atque nesciunt repudiandae!</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/jquery.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
