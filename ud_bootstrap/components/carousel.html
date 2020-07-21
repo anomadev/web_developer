@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carousel</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mt-3">
+        <div class="carousel slide" id="principal-carousel" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#principal-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#principal-carousel" data-slide-to="1"></li>
+            <li data-target="#principal-carousel" data-slide-to="2"></li>
+          </ol>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-caption d-block">
+                <h3>Titulo de la imagen</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quas.</p>
+              </div>
+              <img src="http://lorempixel.com/1100/400" alt="">
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-caption d-block">
+                <h3>Titulo de la imagen 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quas.</p>
+              </div>
+              <img src="http://lorempixel.com/1100/400" alt="">
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-caption d-block">
+                <h3>Titulo de la imagen 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quas.</p>
+              </div>
+              <img src="http://lorempixel.com/1100/400" alt="">
+            </div>
+          </div>
+
+          <a class="carousel-control-prev" href="#principal-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#principal-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/jquery.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
