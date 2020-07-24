@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row mt-3">
+      <div class="col">
+        <button class="btn btn-primary" data-toggle="modal" data-target="#ud-modal" >Abrir Modal</button>
+        <!-- Ventana modal-->
+        <div class="modal fade" id="ud-modal" tabindex="-1" role="dialog" aria-labelledby="ud-modal" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Modal Title</h5>
+                <button class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam error eveniet repellendus, corporis similique maxime ipsum architecto accusamus natus inventore aspernatur labore omnis tenetur, officiis, odio vitae repellat nobis laudantium!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-primary" data-toggle="modal" data-target="#ud-modalGrid" >Abrir Modal con Grid</button>
+        <!-- Ventana modal-->
+        <div class="modal fade" id="ud-modalGrid" tabindex="-1" role="dialog" aria-labelledby="ud-modalGrid" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Modal Grid</h5>
+                <button class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-6">
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis perferendis explicabo, fugit iusto necessitatibus sunt minima nulla, magni temporibus facilis ipsa animi! Praesentium repellendus quod ipsa, eveniet omnis ipsam ipsum.</p>
+                    </div>
+                    <div class="col-6">
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis perferendis explicabo, fugit iusto necessitatibus sunt minima nulla, magni temporibus facilis ipsa animi! Praesentium repellendus quod ipsa, eveniet omnis ipsam ipsum.</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+  <script src="../js/jquery.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menus de Navegación: Navs</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <style>
+    .ud-nav a{
+      color: #fff;
+      padding: 15px;
+    }
+
+    .ud-nav .disabled {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .ud-nav a:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mt-4">
+        <h3>Menu con Ul</h3>
+        <hr>
+
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link disabled">Proximamente</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-12 mt-4">
+        <h3>Menu Personalizado</h3>
+        <hr>
+
+        <ul class="nav ud-nav bg-dark">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link disabled">Proximamente</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contacto</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-12 mt-4">
+        <h3>Menu con Nav</h3>
+        <hr>
+
+        <nav class="nav">
+          <a href="#" class="nav-link">Inicio</a>
+          <a href="#" class="nav-link">Blog</a>
+          <a href="#" class="nav-link disabled">Proximamente</a>
+          <a href="#" class="nav-link">Contacto</a>
+        </nav>
+      </div>
+
+      <div class="col-12 mt-4">
+        <h3>Menu Vertical</h3>
+        <hr>
+
+        <nav class="nav flex-column">
+          <a href="#" class="nav-link">Inicio</a>
+          <a href="#" class="nav-link">Blog</a>
+          <a href="#" class="nav-link disabled">Proximamente</a>
+          <a href="#" class="nav-link">Contacto</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  
+  <script src="../js/jquery.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
