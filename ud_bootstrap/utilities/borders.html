@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bordes</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <style>
+    .caja {
+      background: rgb(221, 221, 221);
+      border: 1px solid #000;
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row mt-3">
+      <div class="col">
+        <div class="caja"></div>
+        <div class="caja border-0"></div>
+        <div class="caja border-top-0"></div>
+        <div class="caja border-right-0"></div>
+        <div class="caja border-bottom-0"></div>
+        <div class="caja border-left-0"></div>
+      </div>
+      <div class="col">
+        <div class="caja bg-primary border-0 rounded"></div>
+        <div class="caja bg-primary border-0 rounded-top"></div>
+        <div class="caja bg-primary border-0 rounded-right"></div>
+        <div class="caja bg-primary border-0 rounded-bottom"></div>
+        <div class="caja bg-primary border-0 rounded-left"></div>
+        <div class="caja bg-primary border-0 rounded-circle"></div>
+        <div class="caja bg-primary border-0 rounded-0"></div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="../js/jquery.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
