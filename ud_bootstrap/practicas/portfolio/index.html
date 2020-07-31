@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../css/bootstrap.min.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="container">
+      <!-- barra de menu -->
+      <div class="row nav rounded-top align-items-stretch justify-content-between">
+        <!-- logotipo -->
+        <div class="col-md-12 col-lg logo d-flex align-items-center justify-content-center justify-content-lg-start">
+          <h2>Cristhofer Ordaz</h2>
+          <span class="icono fa fa-asterisk"></span>
+          <p>Desarrollador Web</p>
+        </div>
+        <!-- menu -->
+        <nav class="col-md-12 col-lg-auto menu d-flex align-items-stretch flex-wrap flex-sm-nowrap">
+          <a href="#" class="c-1 d-flex align-items-center">
+            <div class="d-flex flex-column text-center">
+              <span>Portafolio</span>
+              <i class="icono fa fa-briefcase"></i>
+            </div>
+          </a>
+          <a href="#" class="c-2 d-flex align-items-center">
+            <div class="d-flex flex-column text-center">
+              <span>Acerca de</span>
+              <i class="icono fa fa-reddit-alien"></i>
+            </div>
+          </a>
+          <a href="#" class="c-3 d-flex align-items-center">
+            <div class="d-flex flex-column text-center">
+              <span>Contacto</span>
+              <i class="icono fa fa-comment"></i>
+            </div>
+          </a>
+        </nav>
+      </div>
+      <!-- slider -->
+      <div class="row slider">
+        <div class="col">
+          <div class="carousel slide" id="slider" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#slider" data-slide-to="0" class="active"></li>
+              <li data-target="#slider" data-slide-to="1"></li>
+              <li data-target="#slider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="http://lorempixel.com/800/320/nature" alt="slide item" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="http://lorempixel.com/800/320/nature" alt="slide item" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="http://lorempixel.com/800/320/nature" alt="slide item" class="d-block w-100">
+              </div>
+            </div>
+            <a href="#slider" class="carousel-control-prev" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a href="#slider" class="carousel-control-next" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Siguiente</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </header>
+
+  <!-- Main Portafolio -->
+  <main>
+    <div class="container">
+      <!-- Sección Portafolio -->
+      <div class="row portafolio">
+        <div class="col">
+          <h2 class="titulo">Portafolio</h2>
+          <div class="row galeria jsutify-content-center">
+            <div class="contenedor-imagen col-6 col-lg-4">
+              <a href="#" data-toggle="modal" data-target="#modal">
+                <img src="http://lorempixel.com/300/180" class="img-fluid imagen">
+              </a>
+            </div>
+            <div class="contenedor-imagen col-12 col-lg-8">
+              <a href="#" data-toggle="modal" data-target="#modal">
+                <img src="http://lorempixel.com/800/180" class="img-fluid imagen">
+              </a>
+            </div>
+            <div class="contenedor-imagen col-12 col-lg-8">
+              <a href="#" data-toggle="modal" data-target="#modal">
+                <img src="http://lorempixel.com/800/180" class="img-fluid imagen">
+              </a>
+            </div>
+            <div class="contenedor-imagen col-6 col-lg-4">
+              <a href="#" data-toggle="modal" data-target="#modal">
+                <img src="http://lorempixel.com/300/180" class="img-fluid imagen">
+              </a>
+            </div>
+            <div class="contenedor-imagen col-6 col-lg-4">
+              <a href="#" data-toggle="modal" data-target="#modal">
+                <img src="http://lorempixel.com/300/180" class="img-fluid imagen">
+              </a>
+            </div>
+            <div class="contenedor-imagen col-6 col-lg-4">
+              <a href="#" data-toggle="modal" data-target="#modal">
+                <img src="http://lorempixel.com/300/180/nature" class="img-fluid imagen">
+              </a>
+            </div>
+            <div class="contenedor-imagen col-6 col-lg-4">
+              <a href="#" data-toggle="modal" data-target="#modal">
+                <img src="http://lorempixel.com/300/180" class="img-fluid imagen">
+              </a>
+            </div>
+
+            <div class="modal fade" id="modal">
+              <div class="modal-dialog d-flex justify-content-center align-items-center">
+                <div class="modal-content">
+                  <img src="" alt="imagen modal" id="imagen-modal">
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Acerca de -->
+      <div class="row acerca-de align-items-center">
+        <div class="col-12 col-lg-4 foto">
+          <img src="http://lorempixel.com/200/200/people" class="rounded-circle img-fluid" alt="">
+          <p class="nombre">Cristhofer Ordaz</p>
+        </div>
+        <div class="col-12 col-lg-8 info">
+          <h2 class="titulo">Acerca de</h2>
+          <p class="resumen">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aliquam, non consequatur fugiat porro distinctio ut, voluptates iusto dignissimos recusandae corporis soluta asperiores magni facilis tempore repudiandae dolor ratione minima.</p>
+          <p class="label">HTML</p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 95%;">95%</div>
+          </div>
+          <p class="label">CSS</p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 100%;">100%</div>
+          </div>
+          <p class="label">JAVASCRIPT</p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 85%;">85%</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contacto -->
+      <div class="row contacto justify-content-center">
+        <div class="col-12 col-lg-8">
+          <h2 class="titulo">Contacto</h2>
+          <form action="" class="formulario">
+            <div class="form-group row">
+              <div class="col-12 col-md-6">
+                <input type="text" name="nombre" id="nombre">
+              </div>
+              <div class="col-12 col-md-6">
+                <input type="email" name="email" id="email">
+              </div>
+            </div>
+            <textarea></textarea>
+            <div class="form-group d-flex justify-content-center">
+              <input type="submit" class="boton" value="Enviar">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Pie de Pagina -->
+  <footer>
+    <div class="container">
+      <!-- Redes Sociales -->
+      <div class="row redes-sociales justify-content-center">
+        <div class="col-auto">
+          <a href="#" class="icono fa fa-twitter twitter"></a>
+          <a href="#" class="icono fa fa-facebook facebook"></a>
+          <a href="#" class="icono fa fa-instagram instagram"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/jquery.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="./scripts.js"></script>
+</body>
+</html>
