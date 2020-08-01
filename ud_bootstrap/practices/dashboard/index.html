@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../css/bootstrap.min.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Barra Lateral -->
+      <div class="col barra-lateral col-12 col-sm-auto">
+        <div class="logo">
+          <h2>Dashboard</h2>
+        </div>
+        <nav class="menu d-flex d-sm-block justify-content-center flex-wrap">
+          <a href="#"><i class="fa fa-home"></i><span>Inicio</span></a>
+          <a href="#"><i class="fa fa-comment"></i><span>Entradas</span></a>
+          <a href="#"><i class="fa fa-user"></i><span>Usuarios</span></a>
+          <a href="#"><i class="fa fa-cog"></i><span>Configuración</span></a>
+          <a href="#"><i class="fa fa-power-off"></i><span>Salir</span></a>
+        </nav>
+      </div>
+      
+      <!-- Main area -->
+      <main class="col main">
+        <div class="row">
+          <!-- Entrada -->
+          <div class="columna col-lg-7">
+            <div class="widget nueva_entrada">
+              <h3 class="titulo">Nueva Entrada</h3>
+              <form>
+                <input type="text" placeholder="Titulo de la entrada">
+                <textarea placeholder="Contenido de la entrada"></textarea>
+                <div class="d-flex justify-content-end">
+                  <button><i class="fa fa-edit"></i> Enviar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- Panel -->
+          <div class="columna col-lg-5">
+            <!-- Estadisticas-->
+            <div class="widget estadisticas">
+              <h3 class="titulo">Estadisticas</h3>
+              <div class="contenedor d-flex flex-wrap">
+                <div class="caja">
+                  <h3>13,893</h3>
+                  <p>Visitas</p>
+                </div>
+                <div class="caja">
+                  <h3> 1,637</h3>
+                  <p>Registros</p>
+                </div>
+                <div class="caja">
+                  <h3>$162,005</h3>
+                  <p>Ingresos</p>
+                </div>
+              </div>
+            </div>
+            <!-- Comenatarios -->
+            <div class="widget comentarios">
+              <h3 class="titulo">Comentarios</h3>
+              <div class="contenedor">
+                <div class="comentario d-flex flex-wrap">
+                  <div class="foto">
+                    <a href="#">
+                      <img src="http://lorempixel.com/100/100/people" alt="imagen de perfil" width="100">
+                    </a>
+                  </div>
+                  <div class="texto">
+                    <a href="#">Jhon Doe</a>
+                    <p>en <a href="#">Mi primer entrada</a></p>
+                    <p class="texto-comentario">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit id nihil earum, odio totam optio dolores sapiente deserunt, assumenda nulla aspernatur aliquid tempore, quibusdam quaerat asperiores minus quidem architecto dolorem.</p>
+                  </div>
+                  <div class="botones d-flex justify-content-start flex-wrap w-100">
+                    <button class="aprobar"><i class="fa fa-check"></i> Aprobar</button>
+                    <button class="eliminar"><i class="fa fa-times"></i> Eliminar</button>
+                    <button class="bloquear"><i class="fa fa-ban"></i> Bloquear Usuario</button>
+                  </div>
+                </div>
+                <div class="comentario d-flex flex-wrap">
+                  <div class="foto">
+                    <a href="#">
+                      <img src="http://lorempixel.com/100/100/nature" alt="imagen de perfil" width="100">
+                    </a>
+                  </div>
+                  <div class="texto">
+                    <a href="#">Sansa Stark</a>
+                    <p>en <a href="#">Mi primer entrada</a></p>
+                    <p class="texto-comentario">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit id nihil earum, odio totam optio dolores sapiente deserunt.</p>
+                  </div>
+                  <div class="botones d-flex justify-content-start flex-wrap w-100">
+                    <button class="aprobar"><i class="fa fa-check"></i> Aprobar</button>
+                    <button class="eliminar"><i class="fa fa-times"></i> Eliminar</button>
+                    <button class="bloquear"><i class="fa fa-ban"></i> Bloquear Usuario</button>
+                  </div>
+                </div>
+                <div class="comentario d-flex flex-wrap">
+                  <div class="foto">
+                    <a href="#">
+                      <img src="http://lorempixel.com/100/100/sports" alt="imagen de perfil" width="100">
+                    </a>
+                  </div>
+                  <div class="texto">
+                    <a href="#">Rob Stark</a>
+                    <p>en <a href="#">Mi primer entrada</a></p>
+                    <p class="texto-comentario">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit id nihil earum, odio totam optio dolores sapiente deserunt, assumenda nulla aspernatur aliquid tempore.</p>
+                  </div>
+                  <div class="botones d-flex justify-content-start flex-wrap w-100">
+                    <button class="aprobar"><i class="fa fa-check"></i> Aprobar</button>
+                    <button class="eliminar"><i class="fa fa-times"></i> Eliminar</button>
+                    <button class="bloquear"><i class="fa fa-ban"></i> Bloquear Usuario</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="../../js/jquery.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>
