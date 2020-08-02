@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redes Sociales</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../css/bootstrap.min.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-auto logo hidden-sm-down">
+          <a href="#">
+            <i class="fa fa-rocket"></i>
+          </a>
+        </div>
+        <div class="col-12 col-sm-8 col-lg-6 flex-last flex-sm-unordered buscar">
+          <form>
+            <div class="row no-gutters align-items-center">
+              <div class="columna col-10">
+                <input type="text" placeholder="Amigos, lugares y cosas que te gustan">
+              </div>
+              <div class="columna col-2">
+                <button><i class="fa fa-search"></i></button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <nav class="col-12 col-sm-3 col-lg-2 menu d-flex justify-content-between ml-auto">
+          <a href="#"><i class="fa fa-user"></i></a>
+          <a href="#"><i class="fa fa-bell"></i></a>
+          <a href="#"><i class="fa fa-comment"></i></a>
+          <a href="#" class="imagen"><img src="http://lorempixel.com/200/200/people" width="22" height="22" alt="avatar user"></a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="row">
+      <!-- Barra Lateral Izquierda -->
+      <div class="col-12 col-md-3 barra-lateral-izquierda" id="barra-lateral-izquierda">
+        <nav>
+          <a href="#"><i class="fa fa-users"></i> Amigos</a>
+          <a href="#"><i class="fa fa-comment"></i> Privados</a>
+          <a href="#"><i class="fa fa-globe"></i> Paginas</a>
+          <a href="#"><i class="fa fa-play"></i> Videos</a>
+          <a href="#"><i class="fa fa-music"></i> Musica</a>
+          <a href="#"><i class="fa fa-bookmark"></i> Libros</a>
+        </nav>
+      </div>
+
+      <a href="#" class="fondo-enlace d-md-none" id="fondo-enlace"></a>
+
+      <!-- Contenido -->
+      <div class="col contenido-principal">
+        <div class="publicar">
+          <div class="row">
+            <div class="col">
+              <a href="#" class="btn-menu d-md-none d-flex justify-content-between" id="btn-menu">
+                <span>Menu</span>
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="row justify-content-center">
+            <div class="col-auto foto">
+              <a href="#">
+                <img src="http://lorempixel.com/200/200/people" alt="">
+              </a>
+            </div>
+            <div class="col">
+              <form>
+                <textarea name="mensaje" placeholder="Publicar mensaje"></textarea>
+                <div class="contenedor-botones d-flex justify-content-between">
+                  <div class="media">
+                    <a href="#"><i class="fa fa-image"></i></a>
+                    <a href="#"><i class="fa fa-play"></i></a>
+                    <a href="#"><i class="fa fa-music"></i></a>
+                  </div>
+                  <div>
+                    <button>Publicar</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="publicacion">
+          <div class="row">
+            <div class="col-auto foto">
+              <a href="#">
+                <img src="http://lorempixel.com/200/200/people" alt="foto de perfil">
+              </a>
+            </div>
+
+            <div class="col">
+              <!-- Publicación -->
+              <div class="post">
+                <a href="#" class="nombre">Andrea Lorem Ipsum</a>
+                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique porro ratione eveniet! Rem molestias consequatur odio magnam minus saepe suscipit odit, itaque nemo eaque vero minima id perspiciatis dolore. Vero!</p>
+                <div class="caja-botones d-flex justify-content-between align-items-center">
+                  <button><i class="fa fa-thumbs-up"></i></button>
+                  <p>15 <i class="fa fa-thumbs-up"></i></p>
+                </div>
+              </div>
+
+              <!-- Comentarios -->
+              <div class="comentarios">
+                <div class="row comentario no-gutters">
+                  <div class="col-auto foto">
+                    <a href="#">
+                      <img src="http://lorempixel.com/200/200/people" alt="foto de perfil">
+                    </a>
+                  </div>
+                  <div class="col">
+                    <form>
+                      <textarea placeholder="comentario"></textarea>
+                    </form>
+                  </div>
+                </div>
+                <div class="row comentario no-gutters">
+                  <div class="col-auto foto">
+                    <a href="#">
+                      <img src="http://lorempixel.com/200/200/people" alt="foto de perfil">
+                    </a>
+                  </div>
+                  <div class="col">
+                    <p class="respuesta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum quae sequi.</p>
+                    <a href="#" class="me-gusta">Me gusta</a>
+                  </div>
+                </div>
+                <div class="row comentario no-gutters">
+                  <div class="col-auto foto">
+                    <a href="#">
+                      <img src="http://lorempixel.com/200/200/people" alt="foto de perfil">
+                    </a>
+                  </div>
+                  <div class="col">
+                    <p class="respuesta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum quae sequi.</p>
+                    <a href="#" class="me-gusta">Me gusta</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="publicacion">
+          <div class="row">
+            <div class="col-auto foto">
+              <a href="#">
+                <img src="http://lorempixel.com/200/200/people" alt="foto de perfil">
+              </a>
+            </div>
+
+            <div class="col">
+              <!-- Publicación -->
+              <div class="post">
+                <a href="#" class="nombre">Alexis Lorem Ipsum</a>
+                <div class="imagen">
+                  <img src="http://lorempixel.com/440/300/nature" alt="publicación">
+                </div>
+                <div class="caja-botones d-flex justify-content-between align-items-center">
+                  <button><i class="fa fa-thumbs-up"></i></button>
+                  <p>15 <i class="fa fa-thumbs-up"></i></p>
+                </div>
+              </div>
+
+              <!-- Comentarios -->
+              <div class="comentarios">
+                <div class="row comentario no-gutters">
+                  <div class="col-auto foto">
+                    <a href="#">
+                      <img src="http://lorempixel.com/200/200/people" alt="foto de perfil">
+                    </a>
+                  </div>
+                  <div class="col">
+                    <form>
+                      <textarea placeholder="comentario"></textarea>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Barra Lateral Derecha -->
+      <div class="col-3 barra-lateral-derecha d-none d-lg-block">
+        <h3>Publicidad</h3>
+        <div class="ads">
+          <a href="#"><img src="http://lorempixel.com/300/180/food" width="300" alt="publicidad"></a>
+          <a href="#"><img src="http://lorempixel.com/300/180/business" width="300" alt="publicidad"></a>
+          <a href="#"><img src="http://lorempixel.com/300/180/sports" width="300" alt="publicidad"></a>
+        </div>
+
+        <footer>
+          <a href="#">Privacidad</a>
+          <a href="#">Condiciones</a>
+          <a href="#">Publicidad</a>
+          <p class="copyright">Red Social 2020</p>
+        </footer>
+      </div>
+    </div>
+  </main>
+  
+  <script src="../../js/jquery.js"></script>
+  <script src="./scripts.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>
