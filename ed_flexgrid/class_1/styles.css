@@ -1,0 +1,78 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+*,
+*:after,
+*:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+/*
+  Flex Container
+  display: flex | inline-flex
+  Define una caja de bloque o de linea
+
+  flex-direction: row | row-reverse | column | colum-reverse
+  Define el eje principal y el transversal de la caja flexible
+  row        x - principal        y - transversal
+  column     y - principal        x - transversal
+
+  flex-wrap: no-wrap | wrap | wrap-reverse
+  Determina la existencia o no de los saltos de línea y su sentido
+
+  justify-content: flax-start | flex-end | center | space-between | space-around
+  Alineación de los hijos en el eje principal (espacio sobrante)
+
+  align-items: stretch | flex-start | flex-end | center | space-between | space-around
+  Alineación de los hijos en el eje transversal (espacio sobrante) cuando no hay saltos de línea (flex-wrap: nowrap)
+
+  align-content: stretch | flex-start | flex-end | center | space-between | space-around
+  Alineación de los hijos en el eje transversal (espacio sobrante) cuando si hay saltos de línea (flex-wrap: wrap | wrap-reverse)
+*/
+
+.container {
+  background-color: steelblue;
+  padding: 1rem;
+  margin: auto;
+  width: 80vw;
+  height: 50vh;
+  border: medium solid #333;
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+/*
+  Elementos hijos del flex container
+
+  flex-basis: Tamaño en el eje principal de los elementos hijos, tiene más relevancia que la propiedad width, a menos que el valor del basis sea auto.
+
+  flex-grow: Factor de crecimiento según el espacio disponible
+  flex-shrink: Factor de reducción según el espacio desponible
+  flex: shorthand con los valores para el: grow shrink basis
+
+  align-self:Es la propiedad para alinear un elemento en el eje secundario
+  order: Propiedad que permite definir el orden en el que elemento es dibujado por el navegador
+*/
+
+.item {
+  border: thin solid #333;
+  font-size: 2rem;
+  background-color: deepskyblue;
+  width: 15%;
+  height: 30%;
+
+  flex-basis: 30px;
+}
+
+.item:nth-child(2){
+  align-self: flex-end;
+}
