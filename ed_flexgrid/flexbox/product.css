@@ -1,0 +1,67 @@
+html, body {
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  background: #eee;
+  margin: 1em;
+  padding: 1em;
+  position: relative;
+}
+
+.product.oferta .product__tag {
+  display: block;
+}
+
+.product__footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+.product__title {
+  width: 60%;
+  font-size: 1.6em;
+
+}
+
+.product__tag {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: yellow;
+  padding: 1em;
+}
+
+.product__price {
+  text-align: right;
+  width: 40%;
+}
+
+.product__price::before {
+  content: '$';
+}
+
+.product__price::after {
+  content: '.00';
+}
+
+.product__buy {
+  text-decoration: none;
+  background: red;
+  display: inline-block;
+  color: #fff;
+  padding: .5em 2em;
+  border-radius: 0.2em;
+  margin-top: 1em;
+}
+
