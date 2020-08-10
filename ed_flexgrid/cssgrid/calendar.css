@@ -1,0 +1,66 @@
+:root {
+  --calendar-gap: 4px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  min-height: 100vh;
+  display: flex;
+  background: linear-gradient(-45deg, hsl(330, 100%, 50%), hsl(30, 100%, 50%));
+}
+
+.calendar {
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.calendar__header {
+  background: rgba(0,0,0,0.3);
+}
+
+.calendar__month {
+  text-align: center;
+  line-height: 2;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.calendar__week,
+.calendar__dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: var(--calendar-gap);
+}
+
+.calendar__week {
+  margin-bottom: var(--calendar-gap);
+}
+
+.calendar__day {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 0.8em;
+}
+
+.calendar__item {
+  text-align: center;
+  line-height: 2;
+}
+
+.calendar__date {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.calendar__date:first-child {
+  grid-column: 5;
+}
