@@ -12,3 +12,7 @@ cf_dom/.idea/
 
 # directorios y archivos a descartar del curso de desarrollo web frontend
 cf_frontend/node_modules/ 
+
+# directorios y archivos a descartar del curso de web progress aplications
+ed_wpa/.idea/
+ed_wpa/clonegram/node_modules/

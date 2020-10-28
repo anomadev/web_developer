@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PWA Boilerplate</title>
+
+  <!-- Declaracion de Manifest -->
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#F7DF1E">
+
+  <!-- Deteccion de icono de PWA -->
+  <link rel="icon" type="image" sizes="16x16" href="./img/icon_16x16.png">
+
+  <!-- Metatags de IOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-title" content="PWA Boilerplate">
+  <link rel="apple-touch-icon" sizes="192x192" href="./img/icon_192x192.png">
+
+  <!-- Metatags de Windows -->
+  <meta name="msapplication-TileColor" content="#F7DF1E">
+  <meta name="msapplication-TileImage" content="./img/icon_192x192.png">
+
+  <!-- Metatags Open Graph -->
+  <meta property="og:title" content="PWA Boilerplate">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./img/icon_128x128.png">
+  <meta property="og:site_name" content="PWA Boilerplate">
+  <meta property="og:url" content="https://domain.com">
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Progressive Web App Boilerplate</h1>
+  </header>
+
+  <section class="github-user"></section>
+
+  <form class="github-user-form">
+    <input type="search" id="search" placeholder="Buscador GitHub">
+  </form>
+
+  <button id="share">Compartir</button>
+
+  <script src="./promises.js"></script>
+  <script src="./scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+.clonegram {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.sign {
+  text-align: center;
+
+  &__title {
+    width: 100%;
+    height: 20vh;
+    font-weight: bold;
+    text-indent: -9999px;
+    background: {
+      // image: url('./assets/img/instagram-logo.png');
+      size: contain;
+      repeat: no-repeat;
+      position: center;
+    }
+  }
+
+  &__button {
+    &:hover {
+      transform: rotateY(360deg);
+    }
+
+    & > * {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
+
+.header {
+  top: 0;
+
+  &__logo {
+    width: 100%;
+    height: 2rem;
+    font-weight: bold;
+    text-indent: -9999px;
+    background: {
+      // image: url('./assets/img/instagram-logo.png');
+      size: contain;
+      repeat: no-repeat;
+      position: center;
+    }
+  }
+}
+
+.content {
+  padding: 3rem 3rem;
+
+  &-section {
+    width: 100%;
+    min-height: 100vh;
+  }
+}
+
+.footer {
+  bottom: 0;
+
+}
+
+[class$="__menu"] {
+  padding: .25rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+
+  & button {
+    font-size: 5vw;
+  }
+}
+
+.uplaoder {
+  & input[type="file"] {
+    display: none;
+  }
+
+  & label {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
+
+.profile {
+  margin: auto;
+  text-align: center;
+
+  & > * {
+    margin: .5rem auto;
+  }
+
+  & > h3 {
+    margin: 2rem auto;
+    font-size: 4vw;
+  }
+
+  &-name {
+    font: {
+      weight: bold;
+      size: 10vw;
+    }
+  }
+
+  &-email {
+    font-size: 5vw;
+  }
+
+  &-avatar {
+    border-radius: 50%;
+    max-width: 300px;
+  }
+
+  &-photos {
+    & img {
+      margin: 1rem auto;
+    }
+  }
+}
+
+.camera {
+  &-photo {
+    padding: .5rem;
+    background-color: #FFF;
+  }
+}
+
+.timeline {
+  & .photo {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    &-author {
+      padding: .25rem;
+      width: 100%;
+      order: -1;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(180deg, $fourth-color, $third-color, $fourth-color);
+
+      &Avatar {
+        margin: 0;
+        max-width: 24px;
+        border-radius: 50%;
+      }
+
+      &Name {
+        margin-left: .25rem;
+        font-size: 4vw;
+      }
+    }
+  }
+}

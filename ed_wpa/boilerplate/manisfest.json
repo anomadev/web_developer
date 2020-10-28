@@ -1,0 +1,19 @@
+{
+  "name": "Progressive Web Application",
+  "short_name": "PWA Boilerplate",
+  "description": "Descripcion de la Progressive Web App",
+  "background_color": "#F7DF1E",
+  "theme_color": "#000",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "./?utm=homescreen",
+  "scope": "./",
+  "lang": "es_MX",
+  "icons": [
+    {
+      "src": "./img/icon_1024x1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ]
+}

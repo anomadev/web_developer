@@ -1,0 +1,22 @@
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  padding: 1rem;
+  text-align: center;
+  background: #F7DF1E;
+}
+
+.header.header--offline {
+  background: #666;
+  color: #FFF;
+  filter: blur(.1rem);
+}
